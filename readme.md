@@ -131,7 +131,7 @@ pip install tavily-python langchain groq langgraph python-dotenv
 - Multi-search engine aggregation
 - Parallel research threads
 - Human-in-the-loop review
-- Automated quality scoring
+- Automated quality scoring (similarity scores or entropy)
 - Feedback iteration loops
 
 This implementation demonstrates a robust research pipeline combining current AI capabilities with systematic quality control mechanisms. The agentic architecture allows for targeted improvements while maintaining operational stability through error-resistant design.
