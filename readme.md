@@ -83,13 +83,7 @@ workflow.add_edge("review_answer", "refine_answer")
   - Failed review fallthrough
   - Draft preservation on refinement failure
 
-## Usage Example
-```python
-async def main():
-    query = "What are the impacts of AI on the world"
-    output = await research_system.ainvoke({"query": query})  
-    print("\n=== Final Answer ===\n", output["final_answer"])
-```
+
 
 ## Performance Considerations
 - Asynchronous threading for API calls
@@ -142,10 +136,17 @@ pip install tavily-python langchain groq langgraph python-dotenv
 
 This implementation demonstrates a robust research pipeline combining current AI capabilities with systematic quality control mechanisms. The agentic architecture allows for targeted improvements while maintaining operational stability through error-resistant design.
 
-## Example Use
-input query :: What are the impacts of AI on the world
+## Usage Example
+```python
+async def main():
+    query = "What are the impacts of AI on the world"
+    output = await research_system.ainvoke({"query": query})  
+    print("\n=== Final Answer ===\n", output["final_answer"])
+```
 
-output :: Research Data start
+output :: 
+
+Research Data start
 ---------------------------------------------------
 Research Results: [{'url': 'https://www.gate39media.com/the-global-impact-of-artificial-intelligence/', 'content': 'The rapid advancement of AI systems presents a significant risk of economic disruption and job displacement across industries. It is paramount'}, {'url': 'https://www.3dbear.io/blog/the-impact-of-ai-how-artificial-intelligence-is-transforming-society', 'content': 'AI-powered technologies are also being used to improve the user experience and to offer more personalized recommendations and services. AI has the potential to revolutionize education, offering personalized and individualized teaching, and improved learning outcomes. AI-powered technologies can provide students with real-time feedback, help them to stay on track with their studies, and offer a more personalized and engaging learning experience. AI has the potential to bring about numerous positive changes in society, including enhanced productivity, improved healthcare, and increased access to education. From revolutionizing the healthcare industry to providing personalized learning experiences, AI has the potential to improve our lives in countless ways. By doing so, we can ensure that AI continues to play a positive role in our world, improving our lives and creating a better future for generations to come.'}, {'url': 'https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity', 'content': 'In a new analysis, IMF staff examine the potential impact of AI on the global labor market. In advanced economies, about 60 percent of jobs may be impacted by AI. To help countries craft the right policies, the IMF has developed an AI Preparedness Index that measures readiness in areas such as digital infrastructure, human-capital and labor-market policies, innovation and economic integration, and regulation and ethics. The findings reveal that wealthier economies, including advanced and some emerging market economies, tend to be better equipped for AI adoption than low-income countries, though there is considerable variation across countries. June 25, 2024New AI Preparedness Index Dashboard tracks 174 economies based on their digital infrastructure, human capital, labor policies, innovation, integration and regulation'}, {'url': 'https://www.brookings.edu/articles/how-artificial-intelligence-is-transforming-the-world/', 'content': 'In China, for example, companies already have “considerable resources and access to voices, faces and other biometric data in vast quantities, which would help them develop their technologies.”26 New technologies make it possible to match images and voices with other types of information, and to use AI on these combined data sets to improve law enforcement and national security. Opening access to that data will help us get insights that will transform the U.S. economy.”53 Through its Data.gov portal, the federal government already has put over 230,000 data sets into the public domain, and this has propelled innovation and aided improvements in AI and data analytic technologies.54 The private sector also needs to facilitate research data access so that society can achieve the full benefits of artificial intelligence.'}, {'url': 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7605294/', 'content': 'Facing this challenge, new principles of AI bioethics must be considered and developed to provide guidelines for the AI technology to observe so that the world will be benefited by the progress of this new intelligence. Artificial intelligence (AI) has many different definitions; some see it as the created technology that allows computers and machines to function intelligently. The new development of the long-term goal of many researchers is to create strong AI or artificial general intelligence (AGI) which is the speculative intelligence of a machine that has the capacity to understand or learn any intelligent task human being can, thus assisting human to unravel the confronted problem.'}]
 ---------------------------------------------------
