@@ -134,7 +134,7 @@ pip install tavily-python langchain groq langgraph python-dotenv
 - Automated quality scoring (similarity scores or entropy)
 - Feedback iteration loops
 
-This implementation demonstrates a robust research pipeline combining current AI capabilities with systematic quality control mechanisms. The agentic architecture allows for targeted improvements while maintaining operational stability through error-resistant design.
+This research pipeline combines current AI capabilities with systematic quality control mechanisms. The agentic architecture allows for targeted improvements while maintaining operational stability through error-resistant design.
 
 ## Usage Example
 ```python
@@ -144,7 +144,7 @@ async def main():
     print("\n=== Final Answer ===\n", output["final_answer"])
 ```
 
-output :: 
+## output 
 
 Research Data start
 ---------------------------------------------------
@@ -152,7 +152,7 @@ Research Results: [{'url': 'https://www.gate39media.com/the-global-impact-of-art
 ---------------------------------------------------
 Research Data end
 
-=== Final Answer ===
+## === Final Answer ===
  Artificial Intelligence (AI) is rapidly evolving and has the potential to significantly impact various aspects of society and the economy. Here are some key takeaways from recent research:
 
 Economic Disruption and Job Displacement
